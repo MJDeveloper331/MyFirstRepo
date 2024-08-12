@@ -1,0 +1,45 @@
+some Git Commands:
+
+Clone and Status:
+Clone: Cloning a repository on oour local machine.
+      git clone<-some link->
+
+Status: Displays the status of the code.
+       git status
+
+cd: Change directory(directory means folder).
+Let suppose we have a folder GitDemo. In this folder, we have another folder MyFirstRepo. So, if we want to go in the folder inside a folder, we use this command.
+       cd MyFirstRepo
+
+ls (list files): To see all the files and folders.
+       ls
+
+ls -a: To see all the files and folders including hidden ones.
+       ls -a
+
+[After modifying the file, we have to follow two steps:
+First, we have to add it.
+Secondly, we have to commit it.]
+
+[Whenever, we use git status command, we have generally four types of status,
+1:Untracked:
+New files that git doesn't yet know and track.
+2:Modified;
+Files that have been changed/ Changes files.
+3:Unmodified:
+Unchanged Files.
+4:Staged:
+File is ready to be commited.
+(Generally, when do some changes in a file, that file becomes modified. When we add a new file, that becomes untracked.
+So, whenever we do changes like in the file or adding a new file, we heve to add the changes.When we add the changes, the file becomes "staged".
+Next, we have to commit the changes. After commiting the changes, our file will become unmodified.)
+
+Add and Commit:
+add:
+Adds new or changed(modified) files in your working directory to the Git staging area.
+       git add<-file name->   (to add a specific change and file)
+       git add .              (to add all the changes and files)
+
+commit:
+It is the record of change/to add in the record.
+       git commit-m"some message"   (message should be meaningful like if we have added a new feature, the it should be "Add new button or feature", or if we fixed a bug, then it can be "Fix new bug" or "Fix old bug".
